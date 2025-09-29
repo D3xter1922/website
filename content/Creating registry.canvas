@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"0340c32766f69aa7","type":"text","text":"Creating a registry","x":-160,"y":-300,"width":250,"height":60,"color":"#ffffff"},
+		{"id":"2728ff3d653a3c97","type":"text","text":"Create registry from UI:\n- registry name\n- OUID\n- Cleanup/retention policy\n","x":-460,"y":-140,"width":250,"height":150,"color":"5"},
+		{"id":"8aadc68b94f66330","type":"text","text":"Control Plane:\n/create/registry:\nfirst checks if name is unique, then adds it to the db","x":-120,"y":-125,"width":250,"height":135},
+		{"id":"dfa507c73bd4588b","type":"text","text":"Database\n- registries table","x":300,"y":-125,"width":250,"height":135}
+	],
+	"edges":[
+		{"id":"e5d71224b351b5aa","fromNode":"2728ff3d653a3c97","fromSide":"right","toNode":"8aadc68b94f66330","toSide":"left"},
+		{"id":"8ab3a78dd9e0c757","fromNode":"8aadc68b94f66330","fromSide":"right","toNode":"dfa507c73bd4588b","toSide":"left"},
+		{"id":"19e268a5e944da3d","fromNode":"dfa507c73bd4588b","fromSide":"left","toNode":"8aadc68b94f66330","toSide":"right"}
+	]
+}

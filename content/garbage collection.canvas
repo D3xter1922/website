@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"648a6ce3c3a72f19","type":"text","text":"Initiate garbage collection\nparameters:\n- dry run\n- delete-untagged","x":-720,"y":-440,"width":250,"height":180},
+		{"id":"0996ca54b7cf4042","x":-380,"y":-440,"width":250,"height":420,"type":"text","text":"Control plane\n/ou/repo/garbageCollection\n- revert if status is warmup, or garbageCollecting\n1. warmup\nAuth: If status is garbageCollecting, remove push action from future created jwt tokens.\nNow wait 10 minutes for JWT to expire.\n2. garbageCollecting\n3. completed"},
+		{"id":"60d92a1c4880ffaf","x":-60,"y":-425,"width":360,"height":225,"type":"text","text":"database:\nregistry collection: status=garbageCollecting"}
+	],
+	"edges":[
+		{"id":"68200a2647938804","fromNode":"0996ca54b7cf4042","fromSide":"right","toNode":"60d92a1c4880ffaf","toSide":"left"},
+		{"id":"22996af1494c427e","fromNode":"0996ca54b7cf4042","fromSide":"left","toNode":"648a6ce3c3a72f19","toSide":"right"}
+	]
+}
